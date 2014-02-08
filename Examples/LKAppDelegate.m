@@ -7,6 +7,7 @@
 //
 
 #import "LKAppDelegate.h"
+#import "LKDateWeekUtility.h"
 
 @implementation LKAppDelegate
 
@@ -16,6 +17,15 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    for (NSInteger i=1; i <= 7; i++) {
+        NSLog(@"%d: %@", i, [LKDateWeekUtility descriptionForWeekday:i]);
+    }
+    
+    for (NSInteger i=1; i <= 7; i++) {
+        NSLog(@"%d: %@", i, [LKDateWeekUtility shortDescriptionForWeekday:i]);
+    }
+    
     return YES;
 }
 
