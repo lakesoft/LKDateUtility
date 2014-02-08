@@ -58,6 +58,10 @@
 #pragma mark - API
 + (BOOL)shouldRotateAtSecond:(NSInteger)second previousDate:(NSDate*)previousDate targetDate:(NSDate*)targetDate
 {
+    if (previousDate == nil) {
+        return YES;
+    }
+    
     targetDate = targetDate ?targetDate : NSDate.date;
     NSDateComponents* previousComp = [self _componentsFromDate:previousDate];
     if (0 <= second && second <= 59) {
@@ -83,6 +87,10 @@
 
 + (BOOL)shouldRotateAtMinute:(NSInteger)minute previousDate:(NSDate*)previousDate targetDate:(NSDate*)targetDate
 {
+    if (previousDate == nil) {
+        return YES;
+    }
+    
     targetDate = targetDate ?targetDate : NSDate.date;
     NSDateComponents* previousComp = [self _componentsFromDate:previousDate];
     if (0 <= minute && minute <= 59) {
@@ -109,6 +117,10 @@
 
 + (BOOL)shouldRotateAtHour:(NSInteger)hour previousDate:(NSDate*)previousDate targetDate:(NSDate*)targetDate
 {
+    if (previousDate == nil) {
+        return YES;
+    }
+    
     targetDate = targetDate ?targetDate : NSDate.date;
     NSDateComponents* previousComp = [self _componentsFromDate:previousDate];
     if (0 <= hour && hour <= 23) {
@@ -136,6 +148,10 @@
 
 + (BOOL)shouldRotateAtDay:(NSInteger)day hour:(NSInteger)hour previousDate:(NSDate*)previousDate targetDate:(NSDate*)targetDate
 {
+    if (previousDate == nil) {
+        return YES;
+    }
+    
     targetDate = targetDate ?targetDate : NSDate.date;
     NSDateComponents* previousComp = [self _componentsFromDate:previousDate];
     if (1 <= day && day <= 28) {
@@ -164,6 +180,10 @@
 
 + (BOOL)shouldRotateAtWeekday:(NSInteger)weekday hour:(NSInteger)hour previousDate:(NSDate*)previousDate targetDate:(NSDate*)targetDate
 {
+    if (previousDate == nil) {
+        return YES;
+    }
+    
     targetDate = targetDate ?targetDate : NSDate.date;
     NSDateComponents* previousComp = [self _componentsFromDate:previousDate];
     if (1 <= weekday && weekday <= 7) {
@@ -199,6 +219,10 @@
 
 + (BOOL)shouldRotateAtMonth:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour previousDate:(NSDate*)previousDate targetDate:(NSDate*)targetDate
 {
+    if (previousDate == nil) {
+        return YES;
+    }
+    
     targetDate = targetDate ?targetDate : NSDate.date;
     NSDateComponents* previousComp = [self _componentsFromDate:previousDate];
     if (1 <= month && month <= 12) {
