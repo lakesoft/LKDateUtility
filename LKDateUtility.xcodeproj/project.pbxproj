@@ -19,6 +19,13 @@
 		BCF2E33818A3395A00906E47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E32018A3395A00906E47 /* UIKit.framework */; };
 		BCF2E34018A3395A00906E47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E33E18A3395A00906E47 /* InfoPlist.strings */; };
 		BCF2E34218A3395A00906E47 /* LKDateUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E34118A3395A00906E47 /* LKDateUtilityTests.m */; };
+		BCF2E34E18A33A8900906E47 /* LKDateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E34D18A33A8900906E47 /* LKDateUtility.m */; };
+		BCF2E34F18A33A8900906E47 /* LKDateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E34D18A33A8900906E47 /* LKDateUtility.m */; };
+		BCF2E35218A33ABD00906E47 /* LKDateFormatUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E35118A33ABD00906E47 /* LKDateFormatUtility.m */; };
+		BCF2E35318A33ABD00906E47 /* LKDateFormatUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E35118A33ABD00906E47 /* LKDateFormatUtility.m */; };
+		BCF2E35618A33B2400906E47 /* LKDateRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E35518A33B2400906E47 /* LKDateRotation.m */; };
+		BCF2E35718A33B2400906E47 /* LKDateRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E35518A33B2400906E47 /* LKDateRotation.m */; };
+		BCF2E35918A38B0100906E47 /* LKDateRotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E35818A38B0100906E47 /* LKDateRotationTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,14 @@
 		BCF2E33D18A3395A00906E47 /* LKDateUtilityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LKDateUtilityTests-Info.plist"; sourceTree = "<group>"; };
 		BCF2E33F18A3395A00906E47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BCF2E34118A3395A00906E47 /* LKDateUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKDateUtilityTests.m; sourceTree = "<group>"; };
+		BCF2E34C18A33A8900906E47 /* LKDateUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDateUtility.h; sourceTree = "<group>"; };
+		BCF2E34D18A33A8900906E47 /* LKDateUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateUtility.m; sourceTree = "<group>"; };
+		BCF2E35018A33ABD00906E47 /* LKDateFormatUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDateFormatUtility.h; sourceTree = "<group>"; };
+		BCF2E35118A33ABD00906E47 /* LKDateFormatUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateFormatUtility.m; sourceTree = "<group>"; };
+		BCF2E35418A33B2400906E47 /* LKDateRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDateRotation.h; sourceTree = "<group>"; };
+		BCF2E35518A33B2400906E47 /* LKDateRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateRotation.m; sourceTree = "<group>"; };
+		BCF2E35818A38B0100906E47 /* LKDateRotationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateRotationTests.m; sourceTree = "<group>"; };
+		BCF2E35E18A5AA9600906E47 /* LKDateUtility.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = LKDateUtility.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +92,10 @@
 		BCF2E31018A3395A00906E47 = {
 			isa = PBXGroup;
 			children = (
-				BCF2E32218A3395A00906E47 /* LKDateUtility */,
-				BCF2E33B18A3395A00906E47 /* LKDateUtilityTests */,
+				BCF2E35D18A5AA8100906E47 /* CocoaPods */,
+				BCF2E34B18A33A6F00906E47 /* Classes */,
+				BCF2E32218A3395A00906E47 /* Examples */,
+				BCF2E33B18A3395A00906E47 /* Tests */,
 				BCF2E31B18A3395A00906E47 /* Frameworks */,
 				BCF2E31A18A3395A00906E47 /* Products */,
 			);
@@ -104,7 +121,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BCF2E32218A3395A00906E47 /* LKDateUtility */ = {
+		BCF2E32218A3395A00906E47 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
 				BCF2E32B18A3395A00906E47 /* LKAppDelegate.h */,
@@ -112,7 +129,7 @@
 				BCF2E32E18A3395A00906E47 /* Images.xcassets */,
 				BCF2E32318A3395A00906E47 /* Supporting Files */,
 			);
-			path = LKDateUtility;
+			path = Examples;
 			sourceTree = "<group>";
 		};
 		BCF2E32318A3395A00906E47 /* Supporting Files */ = {
@@ -126,13 +143,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BCF2E33B18A3395A00906E47 /* LKDateUtilityTests */ = {
+		BCF2E33B18A3395A00906E47 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				BCF2E34118A3395A00906E47 /* LKDateUtilityTests.m */,
+				BCF2E35818A38B0100906E47 /* LKDateRotationTests.m */,
 				BCF2E33C18A3395A00906E47 /* Supporting Files */,
 			);
-			path = LKDateUtilityTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		BCF2E33C18A3395A00906E47 /* Supporting Files */ = {
@@ -142,6 +160,27 @@
 				BCF2E33E18A3395A00906E47 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCF2E34B18A33A6F00906E47 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2E34C18A33A8900906E47 /* LKDateUtility.h */,
+				BCF2E34D18A33A8900906E47 /* LKDateUtility.m */,
+				BCF2E35018A33ABD00906E47 /* LKDateFormatUtility.h */,
+				BCF2E35118A33ABD00906E47 /* LKDateFormatUtility.m */,
+				BCF2E35418A33B2400906E47 /* LKDateRotation.h */,
+				BCF2E35518A33B2400906E47 /* LKDateRotation.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BCF2E35D18A5AA8100906E47 /* CocoaPods */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2E35E18A5AA9600906E47 /* LKDateUtility.podspec */,
+			);
+			name = CocoaPods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +281,9 @@
 			files = (
 				BCF2E32918A3395A00906E47 /* main.m in Sources */,
 				BCF2E32D18A3395A00906E47 /* LKAppDelegate.m in Sources */,
+				BCF2E35218A33ABD00906E47 /* LKDateFormatUtility.m in Sources */,
+				BCF2E34E18A33A8900906E47 /* LKDateUtility.m in Sources */,
+				BCF2E35618A33B2400906E47 /* LKDateRotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF2E35718A33B2400906E47 /* LKDateRotation.m in Sources */,
+				BCF2E35918A38B0100906E47 /* LKDateRotationTests.m in Sources */,
 				BCF2E34218A3395A00906E47 /* LKDateUtilityTests.m in Sources */,
+				BCF2E35318A33ABD00906E47 /* LKDateFormatUtility.m in Sources */,
+				BCF2E34F18A33A8900906E47 /* LKDateUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,8 +407,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LKDateUtility/LKDateUtility-Prefix.pch";
-				INFOPLIST_FILE = "LKDateUtility/LKDateUtility-Info.plist";
+				GCC_PREFIX_HEADER = "Examples/LKDateUtility-Prefix.pch";
+				INFOPLIST_FILE = "Examples/LKDateUtility-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,8 +420,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LKDateUtility/LKDateUtility-Prefix.pch";
-				INFOPLIST_FILE = "LKDateUtility/LKDateUtility-Info.plist";
+				GCC_PREFIX_HEADER = "Examples/LKDateUtility-Prefix.pch";
+				INFOPLIST_FILE = "Examples/LKDateUtility-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,12 +438,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LKDateUtility/LKDateUtility-Prefix.pch";
+				GCC_PREFIX_HEADER = "Examples/LKDateUtility-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "LKDateUtilityTests/LKDateUtilityTests-Info.plist";
+				INFOPLIST_FILE = "Tests/LKDateUtilityTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -415,8 +461,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LKDateUtility/LKDateUtility-Prefix.pch";
-				INFOPLIST_FILE = "LKDateUtilityTests/LKDateUtilityTests-Info.plist";
+				GCC_PREFIX_HEADER = "Examples/LKDateUtility-Prefix.pch";
+				INFOPLIST_FILE = "Tests/LKDateUtilityTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -442,6 +488,7 @@
 				BCF2E34718A3395A00906E47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCF2E34818A3395A00906E47 /* Build configuration list for PBXNativeTarget "LKDateUtilityTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +497,7 @@
 				BCF2E34A18A3395A00906E47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
