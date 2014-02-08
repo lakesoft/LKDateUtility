@@ -69,7 +69,7 @@
                                                                  toDate:previousDate];
         limitComp.second = second;
         NSDate* limitDate = [self._calendar dateFromComponents:limitComp];
-        NSLog(@"prev-target-limit: %@ <=> %@ <=> %@", previousDate, targetDate, limitDate);
+//        NSLog(@"prev-target-limit: %@ <=> %@ <=> %@", previousDate, targetDate, limitDate);
         return [limitDate compare:targetDate] != NSOrderedDescending;
         
     } else {
@@ -95,7 +95,7 @@
         limitComp.minute = minute;
         limitComp.second = 0;
         NSDate* limitDate = [self._calendar dateFromComponents:limitComp];
-        NSLog(@"prev:%@ <=> target:%@ <=> limit:%@", previousDate, targetDate, limitDate);
+//        NSLog(@"prev:%@ <=> target:%@ <=> limit:%@", previousDate, targetDate, limitDate);
         return [limitDate compare:targetDate] != NSOrderedDescending;
         
     } else {
@@ -122,7 +122,7 @@
         limitComp.minute = 0;
         limitComp.second = 0;
         NSDate* limitDate = [self._calendar dateFromComponents:limitComp];
-        NSLog(@"prev:%@ <=> target:%@ <=> limit:%@", previousDate, targetDate, limitDate);
+//        NSLog(@"prev:%@ <=> target:%@ <=> limit:%@", previousDate, targetDate, limitDate);
         return [limitDate compare:targetDate] != NSOrderedDescending;
         
     } else {
@@ -150,7 +150,7 @@
         limitComp.minute = 0;
         limitComp.second = 0;
         NSDate* limitDate = [self._calendar dateFromComponents:limitComp];
-        NSLog(@"prev:%@ <=> target:%@ <=> limit:%@", previousDate, targetDate, limitDate);
+//        NSLog(@"prev:%@ <=> target:%@ <=> limit:%@", previousDate, targetDate, limitDate);
         return [limitDate compare:targetDate] != NSOrderedDescending;
         
     } else {
@@ -174,7 +174,7 @@
         // case3      *     ^|
         // case4  *   ^|
         // case7  *         ^|
-        NSLog(@"prev=%d, target=%d", previousComp.weekday, weekday);
+//        NSLog(@"prev=%d, target=%d", previousComp.weekday, weekday);
         NSDateComponents* limitComp = [self _dateComponentsByAddingYear:0
                                                                   month:0
                                                                     day:previousComp.weekday < weekday ? weekday - previousComp.weekday : previousComp.weekday-weekday+7
@@ -185,7 +185,7 @@
         limitComp.minute = 0;
         limitComp.second = 0;
         NSDate* limitDate = [self._calendar dateFromComponents:limitComp];
-        NSLog(@"prev:%@ <=> target:%@ <=> limit:%@", previousDate, targetDate, limitDate);
+//        NSLog(@"prev:%@ <=> target:%@ <=> limit:%@", previousDate, targetDate, limitDate);
         return [limitDate compare:targetDate] != NSOrderedDescending;
     
     } else {
@@ -214,7 +214,7 @@
         limitComp.minute = 0;
         limitComp.second = 0;
         NSDate* limitDate = [self._calendar dateFromComponents:limitComp];
-        NSLog(@"prev:%@ <=> target:%@ <=> limit:%@", previousDate, targetDate, limitDate);
+//        NSLog(@"prev:%@ <=> target:%@ <=> limit:%@", previousDate, targetDate, limitDate);
         return [limitDate compare:targetDate] != NSOrderedDescending;
         
     } else {
