@@ -31,7 +31,7 @@
 }
 
 #pragma mark - API
-+ (NSString*)descriptionForWeekday:(NSInteger)weekday
++ (NSString*)descriptionForWeekday:(LKDateWeekday)weekday
 {
     NSDateFormatter* df = NSDateFormatter.new;
     df.dateFormat = @"EEEE";
@@ -39,7 +39,7 @@
     return [df stringFromDate:date];
 }
 
-+ (NSString*)shortDescriptionForWeekday:(NSInteger)weekday
++ (NSString*)shortDescriptionForWeekday:(LKDateWeekday)weekday
 {
     NSDateFormatter* df = NSDateFormatter.new;
     df.dateFormat = @"EE";

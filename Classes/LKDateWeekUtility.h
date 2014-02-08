@@ -8,9 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, LKDateWeekday) {
+    LKDateWeekdaySunday     = 1,
+    LKDateWeekdayMonday     = 2,
+    LKDateWeekdayTuesday    = 3,
+    LKDateWeekdayWednesday  = 4,
+    LKDateWeekdayThursday   = 5,
+    LKDateWeekdayFriday     = 6,
+    LKDateWeekdaySaturday   = 7
+};
+
 @interface LKDateWeekUtility : NSObject
 
-+ (NSString*)descriptionForWeekday:(NSInteger)weekday;
-+ (NSString*)shortDescriptionForWeekday:(NSInteger)weekday;
++ (NSString*)descriptionForWeekday:(LKDateWeekday)weekday;
++ (NSString*)shortDescriptionForWeekday:(LKDateWeekday)weekday;
 
 @end
