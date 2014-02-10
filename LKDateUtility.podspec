@@ -14,7 +14,7 @@ Date utility library.
   s.requires_arc = true
 
   s.source_files = 'Classes/*'
-  s.resource = "Resources/LKDateUtility.bundle"
+  s.resource = "Resources/LKDateUtility-Resources.bundle"
 
 end
 
@@ -28,7 +28,7 @@ def s.post_install(target)
         end
 
         File.open(File.join(config.project_pods_root, target.target_definition.copy_resources_script_name), 'a') do |file|
-            file.puts "install_resource 'Resources/LKDateUtility.bundle'"
+            file.puts "install_resource 'Resources/LKDateUtility-Resources.bundle'"
         end
     end
 end

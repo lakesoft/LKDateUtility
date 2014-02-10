@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>LKDateUtility-Resources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>LKDateUtility.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>BC437FF218A9865900E268E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC43800318A9875F00E268E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BCF2E31818A3395A00906E47</key>
 		<dict>
 			<key>primary</key>

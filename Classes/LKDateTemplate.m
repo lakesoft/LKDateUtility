@@ -7,6 +7,7 @@
 //
 
 #import "LKDateTemplate.h"
+#import "LKDateUtilityBundle.h"
 
 @implementation LKDateTemplate
 
@@ -18,9 +19,7 @@
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSLog(@"%@", [[NSBundle bundleForClass:self]
-                      pathForResource:NSStringFromClass(self) ofType:@"plist"]);
-        _keywords = [NSArray arrayWithContentsOfFile:[[NSBundle bundleForClass:self]
+        _keywords = [NSArray arrayWithContentsOfFile:[LKDateUtilityBundle.bundle
                                                       pathForResource:NSStringFromClass(self) ofType:@"plist"]];
     });
     return _keywords;
@@ -85,7 +84,7 @@
 {
     return NSLocalizedStringFromTableInBundle(self._keywords[index][@"desc"],
                                               nil,
-                                              [NSBundle bundleForClass:self],
+                                              LKDateUtilityBundle.bundle,
                                               nil);
 }
 
