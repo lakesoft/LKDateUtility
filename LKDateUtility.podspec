@@ -20,7 +20,7 @@ end
 
 def s.post_install(target)
     puts "\nGenerating LKDateUtility resources bundle\n".yellow if config.verbose?
-    Dir.chdir File.join(config.project_pods_root, ‘LKDateUtility') do
+    Dir.chdir File.join(config.project_pods_root, 'LKDateUtility') do
         command = "xcodebuild -project LKDateUtility.xcodeproj -target LKDateUtility-Resources CONFIGURATION_BUILD_DIR=../Resources"
         command << " 2>&1 > /dev/null" unless config.verbose?
         unless system(command)
