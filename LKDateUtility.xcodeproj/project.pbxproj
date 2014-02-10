@@ -11,8 +11,8 @@
 		BC43801418A9888A00E268E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC43801618A9888A00E268E8 /* Localizable.strings */; };
 		BC43801918A988C400E268E8 /* LKDateTemplate.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC43801818A988C400E268E8 /* LKDateTemplate.plist */; };
 		BC43801D18A9926500E268E8 /* LKDateUtility-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC43800418A9875F00E268E8 /* LKDateUtility-Resources.bundle */; };
-		BC43802018A9931300E268E8 /* LKDateUtilityBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC43801F18A9931300E268E8 /* LKDateUtilityBundle.m */; };
-		BC43802118A9931300E268E8 /* LKDateUtilityBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC43801F18A9931300E268E8 /* LKDateUtilityBundle.m */; };
+		BC43802418A996BE00E268E8 /* LKDateUtilityBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC43802318A996BE00E268E8 /* LKDateUtilityBundle.m */; };
+		BC43802518A996BE00E268E8 /* LKDateUtilityBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC43802318A996BE00E268E8 /* LKDateUtilityBundle.m */; };
 		BCF2E31D18A3395A00906E47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E31C18A3395A00906E47 /* Foundation.framework */; };
 		BCF2E31F18A3395A00906E47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E31E18A3395A00906E47 /* CoreGraphics.framework */; };
 		BCF2E32118A3395A00906E47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E32018A3395A00906E47 /* UIKit.framework */; };
@@ -65,8 +65,8 @@
 		BC43801518A9888A00E268E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BC43801718A9888E00E268E8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BC43801818A988C400E268E8 /* LKDateTemplate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LKDateTemplate.plist; sourceTree = "<group>"; };
-		BC43801E18A9931300E268E8 /* LKDateUtilityBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LKDateUtilityBundle.h; path = ../../LKDateUtility.old/Classes/LKDateUtilityBundle.h; sourceTree = "<group>"; };
-		BC43801F18A9931300E268E8 /* LKDateUtilityBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LKDateUtilityBundle.m; path = ../../LKDateUtility.old/Classes/LKDateUtilityBundle.m; sourceTree = "<group>"; };
+		BC43802218A996BE00E268E8 /* LKDateUtilityBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDateUtilityBundle.h; sourceTree = "<group>"; };
+		BC43802318A996BE00E268E8 /* LKDateUtilityBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateUtilityBundle.m; sourceTree = "<group>"; };
 		BCF2E31918A3395A00906E47 /* LKDateUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKDateUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF2E31C18A3395A00906E47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BCF2E31E18A3395A00906E47 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -240,8 +240,8 @@
 				BCF2E36018A607CC00906E47 /* LKDateWeekUtility.m */,
 				BCF2E37218A8B18000906E47 /* LKDateTemplate.h */,
 				BCF2E37318A8B18000906E47 /* LKDateTemplate.m */,
-				BC43801E18A9931300E268E8 /* LKDateUtilityBundle.h */,
-				BC43801F18A9931300E268E8 /* LKDateUtilityBundle.m */,
+				BC43802218A996BE00E268E8 /* LKDateUtilityBundle.h */,
+				BC43802318A996BE00E268E8 /* LKDateUtilityBundle.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 				BCF2E32918A3395A00906E47 /* main.m in Sources */,
 				BCF2E36118A607CC00906E47 /* LKDateWeekUtility.m in Sources */,
 				BCF2E37418A8B18000906E47 /* LKDateTemplate.m in Sources */,
-				BC43802018A9931300E268E8 /* LKDateUtilityBundle.m in Sources */,
+				BC43802418A996BE00E268E8 /* LKDateUtilityBundle.m in Sources */,
 				BCF2E32D18A3395A00906E47 /* LKAppDelegate.m in Sources */,
 				BCF2E35218A33ABD00906E47 /* LKDateFormatUtility.m in Sources */,
 				BCF2E34E18A33A8900906E47 /* LKDateUtility.m in Sources */,
@@ -414,7 +414,7 @@
 				BCF2E36218A607CC00906E47 /* LKDateWeekUtility.m in Sources */,
 				BCF2E37518A8B18000906E47 /* LKDateTemplate.m in Sources */,
 				BCF2E35918A38B0100906E47 /* LKDateRotationTests.m in Sources */,
-				BC43802118A9931300E268E8 /* LKDateUtilityBundle.m in Sources */,
+				BC43802518A996BE00E268E8 /* LKDateUtilityBundle.m in Sources */,
 				BCF2E37E18A901C400906E47 /* LKDateTemplateTests.m in Sources */,
 				BCF2E34218A3395A00906E47 /* LKDateUtilityTests.m in Sources */,
 				BCF2E35318A33ABD00906E47 /* LKDateFormatUtility.m in Sources */,
