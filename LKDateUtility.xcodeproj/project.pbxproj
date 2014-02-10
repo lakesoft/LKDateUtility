@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC437FE418A90FAF00E268E8 /* LKDateTemplate.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC437FE718A90FAF00E268E8 /* LKDateTemplate.strings */; };
+		BC437FE518A90FAF00E268E8 /* LKDateTemplate.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC437FE718A90FAF00E268E8 /* LKDateTemplate.strings */; };
 		BCF2E31D18A3395A00906E47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E31C18A3395A00906E47 /* Foundation.framework */; };
 		BCF2E31F18A3395A00906E47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E31E18A3395A00906E47 /* CoreGraphics.framework */; };
 		BCF2E32118A3395A00906E47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E32018A3395A00906E47 /* UIKit.framework */; };
@@ -30,8 +32,6 @@
 		BCF2E36218A607CC00906E47 /* LKDateWeekUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E36018A607CC00906E47 /* LKDateWeekUtility.m */; };
 		BCF2E37418A8B18000906E47 /* LKDateTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E37318A8B18000906E47 /* LKDateTemplate.m */; };
 		BCF2E37518A8B18000906E47 /* LKDateTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E37318A8B18000906E47 /* LKDateTemplate.m */; };
-		BCF2E37818A8EE1F00906E47 /* LKDateTemplate.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E37718A8EE1F00906E47 /* LKDateTemplate.strings */; };
-		BCF2E37918A8EE1F00906E47 /* LKDateTemplate.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E37718A8EE1F00906E47 /* LKDateTemplate.strings */; };
 		BCF2E37B18A8F0F300906E47 /* LKDateTemplate.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E37A18A8F0F300906E47 /* LKDateTemplate.plist */; };
 		BCF2E37C18A8F0F300906E47 /* LKDateTemplate.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E37A18A8F0F300906E47 /* LKDateTemplate.plist */; };
 		BCF2E37E18A901C400906E47 /* LKDateTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E37D18A901C400906E47 /* LKDateTemplateTests.m */; };
@@ -48,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC437FE618A90FAF00E268E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/LKDateTemplate.strings; sourceTree = "<group>"; };
+		BC437FE818A90FD200E268E8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file; name = ja; path = ja.lproj/LKDateTemplate.strings; sourceTree = "<group>"; };
 		BCF2E31918A3395A00906E47 /* LKDateUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKDateUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF2E31C18A3395A00906E47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BCF2E31E18A3395A00906E47 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,7 +78,6 @@
 		BCF2E36018A607CC00906E47 /* LKDateWeekUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateWeekUtility.m; sourceTree = "<group>"; };
 		BCF2E37218A8B18000906E47 /* LKDateTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDateTemplate.h; sourceTree = "<group>"; };
 		BCF2E37318A8B18000906E47 /* LKDateTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateTemplate.m; sourceTree = "<group>"; };
-		BCF2E37718A8EE1F00906E47 /* LKDateTemplate.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = LKDateTemplate.strings; sourceTree = "<group>"; };
 		BCF2E37A18A8F0F300906E47 /* LKDateTemplate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LKDateTemplate.plist; sourceTree = "<group>"; };
 		BCF2E37D18A901C400906E47 /* LKDateTemplateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateTemplateTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF2E35D18A5AA8100906E47 /* CocoaPods */,
+				BCF2E37618A8EDF700906E47 /* Resources */,
 				BCF2E34B18A33A6F00906E47 /* Classes */,
 				BCF2E32218A3395A00906E47 /* Examples */,
 				BCF2E33B18A3395A00906E47 /* Tests */,
@@ -192,7 +194,6 @@
 				BCF2E36018A607CC00906E47 /* LKDateWeekUtility.m */,
 				BCF2E37218A8B18000906E47 /* LKDateTemplate.h */,
 				BCF2E37318A8B18000906E47 /* LKDateTemplate.m */,
-				BCF2E37618A8EDF700906E47 /* Resources */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -209,9 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				BCF2E37A18A8F0F300906E47 /* LKDateTemplate.plist */,
-				BCF2E37718A8EE1F00906E47 /* LKDateTemplate.strings */,
+				BC437FE718A90FAF00E268E8 /* LKDateTemplate.strings */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +274,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = BCF2E31018A3395A00906E47;
 			productRefGroup = BCF2E31A18A3395A00906E47 /* Products */;
@@ -290,7 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF2E37818A8EE1F00906E47 /* LKDateTemplate.strings in Resources */,
+				BC437FE418A90FAF00E268E8 /* LKDateTemplate.strings in Resources */,
 				BCF2E32718A3395A00906E47 /* InfoPlist.strings in Resources */,
 				BCF2E32F18A3395A00906E47 /* Images.xcassets in Resources */,
 				BCF2E37B18A8F0F300906E47 /* LKDateTemplate.plist in Resources */,
@@ -302,7 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF2E34018A3395A00906E47 /* InfoPlist.strings in Resources */,
-				BCF2E37918A8EE1F00906E47 /* LKDateTemplate.strings in Resources */,
+				BC437FE518A90FAF00E268E8 /* LKDateTemplate.strings in Resources */,
 				BCF2E37C18A8F0F300906E47 /* LKDateTemplate.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +352,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BC437FE718A90FAF00E268E8 /* LKDateTemplate.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC437FE618A90FAF00E268E8 /* en */,
+				BC437FE818A90FD200E268E8 /* ja */,
+			);
+			name = LKDateTemplate.strings;
+			sourceTree = "<group>";
+		};
 		BCF2E32518A3395A00906E47 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
