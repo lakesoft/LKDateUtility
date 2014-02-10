@@ -8,6 +8,7 @@
 
 #import "LKAppDelegate.h"
 #import "LKDateWeekUtility.h"
+#import "LKDateTemplate.h"
 
 @implementation LKAppDelegate
 
@@ -24,6 +25,48 @@
     
     for (NSInteger i=1; i <= 7; i++) {
         NSLog(@"%d: %@", i, [LKDateWeekUtility shortDescriptionForWeekday:i]);
+    }
+    
+    NSString* template;
+    
+    template = @"%date";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%time";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%y, %yy, %yyyy";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%M, %MM, %MMM, %MMMM";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%d, %dd";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%eee, %eeee";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%h, %hh";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%k, %kk";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    
+    template = @"%H, %HH";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%m, %mm";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%s, %ss";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%a";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    for (int i=0; i < LKDateTemplate.numberOfKeywords; i++) {
+        NSLog(@"%@: %@", [LKDateTemplate keywordTitleAtIndex:i], [LKDateTemplate keywordListAtIndex:i]);
     }
     
     return YES;

@@ -25,4 +25,24 @@
     return result;
 }
 
+
++ (NSDate*)dateOfGregorianCalendarWithYear:(NSInteger)year
+                                     month:(NSInteger)month
+                                       day:(NSInteger)day
+                                      hour:(NSInteger)hour
+                                    minute:(NSInteger)minute
+                                    second:(NSInteger)second {
+    NSDateComponents* comp = NSDateComponents.new;
+    comp.year = year;
+    comp.month = month;
+    comp.day = day;
+    comp.hour = hour;
+    comp.minute = minute;
+    comp.second = second;
+    
+    NSCalendar* calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    return [calendar dateFromComponents:comp];
+    
+    return comp.date;
+}
 @end

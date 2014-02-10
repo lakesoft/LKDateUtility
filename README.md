@@ -5,6 +5,14 @@ Date utility library
 
 ##Usage
 
+###LKDateTemplate
+
+	text = [LKDateTemplate convertWithTemplate:@"%yyyy-%MM-%dd (%eee) %HH:%mm:%ss %a"];
+	// 2014-02-10 (Mon) 22:34:01
+
+Template's keywords are defined in LKDateTemplate.plist.
+Keyword list infomation APIs are available (e.g. +keywordTitleAtIndex:).
+
 ###LKDateWeekUtility
 
     // weekday: 1(Sun) - 7(Sat)
@@ -24,3 +32,4 @@ below symbols are availables:
       LKDateWeekdayFriday     = 6,
       LKDateWeekdaySaturday   = 7
     };
+

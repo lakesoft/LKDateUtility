@@ -28,6 +28,13 @@
 		BCF2E35918A38B0100906E47 /* LKDateRotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E35818A38B0100906E47 /* LKDateRotationTests.m */; };
 		BCF2E36118A607CC00906E47 /* LKDateWeekUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E36018A607CC00906E47 /* LKDateWeekUtility.m */; };
 		BCF2E36218A607CC00906E47 /* LKDateWeekUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E36018A607CC00906E47 /* LKDateWeekUtility.m */; };
+		BCF2E37418A8B18000906E47 /* LKDateTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E37318A8B18000906E47 /* LKDateTemplate.m */; };
+		BCF2E37518A8B18000906E47 /* LKDateTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E37318A8B18000906E47 /* LKDateTemplate.m */; };
+		BCF2E37818A8EE1F00906E47 /* LKDateTemplate.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E37718A8EE1F00906E47 /* LKDateTemplate.strings */; };
+		BCF2E37918A8EE1F00906E47 /* LKDateTemplate.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E37718A8EE1F00906E47 /* LKDateTemplate.strings */; };
+		BCF2E37B18A8F0F300906E47 /* LKDateTemplate.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E37A18A8F0F300906E47 /* LKDateTemplate.plist */; };
+		BCF2E37C18A8F0F300906E47 /* LKDateTemplate.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF2E37A18A8F0F300906E47 /* LKDateTemplate.plist */; };
+		BCF2E37E18A901C400906E47 /* LKDateTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2E37D18A901C400906E47 /* LKDateTemplateTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,11 @@
 		BCF2E35E18A5AA9600906E47 /* LKDateUtility.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = LKDateUtility.podspec; sourceTree = "<group>"; };
 		BCF2E35F18A607CC00906E47 /* LKDateWeekUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDateWeekUtility.h; sourceTree = "<group>"; };
 		BCF2E36018A607CC00906E47 /* LKDateWeekUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateWeekUtility.m; sourceTree = "<group>"; };
+		BCF2E37218A8B18000906E47 /* LKDateTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDateTemplate.h; sourceTree = "<group>"; };
+		BCF2E37318A8B18000906E47 /* LKDateTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateTemplate.m; sourceTree = "<group>"; };
+		BCF2E37718A8EE1F00906E47 /* LKDateTemplate.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = LKDateTemplate.strings; sourceTree = "<group>"; };
+		BCF2E37A18A8F0F300906E47 /* LKDateTemplate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LKDateTemplate.plist; sourceTree = "<group>"; };
+		BCF2E37D18A901C400906E47 /* LKDateTemplateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateTemplateTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +164,7 @@
 			children = (
 				BCF2E34118A3395A00906E47 /* LKDateUtilityTests.m */,
 				BCF2E35818A38B0100906E47 /* LKDateRotationTests.m */,
+				BCF2E37D18A901C400906E47 /* LKDateTemplateTests.m */,
 				BCF2E33C18A3395A00906E47 /* Supporting Files */,
 			);
 			path = Tests;
@@ -177,6 +190,9 @@
 				BCF2E35518A33B2400906E47 /* LKDateRotation.m */,
 				BCF2E35F18A607CC00906E47 /* LKDateWeekUtility.h */,
 				BCF2E36018A607CC00906E47 /* LKDateWeekUtility.m */,
+				BCF2E37218A8B18000906E47 /* LKDateTemplate.h */,
+				BCF2E37318A8B18000906E47 /* LKDateTemplate.m */,
+				BCF2E37618A8EDF700906E47 /* Resources */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -187,6 +203,15 @@
 				BCF2E35E18A5AA9600906E47 /* LKDateUtility.podspec */,
 			);
 			name = CocoaPods;
+			sourceTree = "<group>";
+		};
+		BCF2E37618A8EDF700906E47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCF2E37A18A8F0F300906E47 /* LKDateTemplate.plist */,
+				BCF2E37718A8EE1F00906E47 /* LKDateTemplate.strings */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +290,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF2E37818A8EE1F00906E47 /* LKDateTemplate.strings in Resources */,
 				BCF2E32718A3395A00906E47 /* InfoPlist.strings in Resources */,
 				BCF2E32F18A3395A00906E47 /* Images.xcassets in Resources */,
+				BCF2E37B18A8F0F300906E47 /* LKDateTemplate.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF2E34018A3395A00906E47 /* InfoPlist.strings in Resources */,
+				BCF2E37918A8EE1F00906E47 /* LKDateTemplate.strings in Resources */,
+				BCF2E37C18A8F0F300906E47 /* LKDateTemplate.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +316,7 @@
 			files = (
 				BCF2E32918A3395A00906E47 /* main.m in Sources */,
 				BCF2E36118A607CC00906E47 /* LKDateWeekUtility.m in Sources */,
+				BCF2E37418A8B18000906E47 /* LKDateTemplate.m in Sources */,
 				BCF2E32D18A3395A00906E47 /* LKAppDelegate.m in Sources */,
 				BCF2E35218A33ABD00906E47 /* LKDateFormatUtility.m in Sources */,
 				BCF2E34E18A33A8900906E47 /* LKDateUtility.m in Sources */,
@@ -300,7 +330,9 @@
 			files = (
 				BCF2E35718A33B2400906E47 /* LKDateRotation.m in Sources */,
 				BCF2E36218A607CC00906E47 /* LKDateWeekUtility.m in Sources */,
+				BCF2E37518A8B18000906E47 /* LKDateTemplate.m in Sources */,
 				BCF2E35918A38B0100906E47 /* LKDateRotationTests.m in Sources */,
+				BCF2E37E18A901C400906E47 /* LKDateTemplateTests.m in Sources */,
 				BCF2E34218A3395A00906E47 /* LKDateUtilityTests.m in Sources */,
 				BCF2E35318A33ABD00906E47 /* LKDateFormatUtility.m in Sources */,
 				BCF2E34F18A33A8900906E47 /* LKDateUtility.m in Sources */,

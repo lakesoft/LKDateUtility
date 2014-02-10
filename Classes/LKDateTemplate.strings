@@ -1,0 +1,17 @@
+/*
+  LKDateTemplate.strings
+  LKDateUtility
+
+  Created by Hiroshi Hashiguchi on 2014/02/10.
+  Copyright (c) 2014年 lakesoft. All rights reserved.
+*/
+"date" = "Date";
+"time" = "Time";
+"year" = "Year";
+"month" = "Month";
+"day" = "Day";
+"week" = "Week";
+"hour" = "Hour";
+"minute" = "Minute";
+"second" = "Second";
+"ampm" = "AM/PM";
