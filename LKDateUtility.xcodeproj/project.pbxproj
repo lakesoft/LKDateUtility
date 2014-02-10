@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC437FE418A90FAF00E268E8 /* LKDateTemplate.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC437FE718A90FAF00E268E8 /* LKDateTemplate.strings */; };
-		BC437FE518A90FAF00E268E8 /* LKDateTemplate.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC437FE718A90FAF00E268E8 /* LKDateTemplate.strings */; };
+		BC437FE418A90FAF00E268E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC437FE718A90FAF00E268E8 /* Localizable.strings */; };
+		BC437FE518A90FAF00E268E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC437FE718A90FAF00E268E8 /* Localizable.strings */; };
 		BCF2E31D18A3395A00906E47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E31C18A3395A00906E47 /* Foundation.framework */; };
 		BCF2E31F18A3395A00906E47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E31E18A3395A00906E47 /* CoreGraphics.framework */; };
 		BCF2E32118A3395A00906E47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E32018A3395A00906E47 /* UIKit.framework */; };
@@ -48,8 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BC437FE618A90FAF00E268E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/LKDateTemplate.strings; sourceTree = "<group>"; };
-		BC437FE818A90FD200E268E8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file; name = ja; path = ja.lproj/LKDateTemplate.strings; sourceTree = "<group>"; };
+		BC437FE618A90FAF00E268E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC437FE818A90FD200E268E8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BCF2E31918A3395A00906E47 /* LKDateUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKDateUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF2E31C18A3395A00906E47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BCF2E31E18A3395A00906E47 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -210,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF2E37A18A8F0F300906E47 /* LKDateTemplate.plist */,
-				BC437FE718A90FAF00E268E8 /* LKDateTemplate.strings */,
+				BC437FE718A90FAF00E268E8 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC437FE418A90FAF00E268E8 /* LKDateTemplate.strings in Resources */,
+				BC437FE418A90FAF00E268E8 /* Localizable.strings in Resources */,
 				BCF2E32718A3395A00906E47 /* InfoPlist.strings in Resources */,
 				BCF2E32F18A3395A00906E47 /* Images.xcassets in Resources */,
 				BCF2E37B18A8F0F300906E47 /* LKDateTemplate.plist in Resources */,
@@ -304,7 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF2E34018A3395A00906E47 /* InfoPlist.strings in Resources */,
-				BC437FE518A90FAF00E268E8 /* LKDateTemplate.strings in Resources */,
+				BC437FE518A90FAF00E268E8 /* Localizable.strings in Resources */,
 				BCF2E37C18A8F0F300906E47 /* LKDateTemplate.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,13 +352,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BC437FE718A90FAF00E268E8 /* LKDateTemplate.strings */ = {
+		BC437FE718A90FAF00E268E8 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BC437FE618A90FAF00E268E8 /* en */,
 				BC437FE818A90FD200E268E8 /* ja */,
 			);
-			name = LKDateTemplate.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		BCF2E32518A3395A00906E47 /* InfoPlist.strings */ = {

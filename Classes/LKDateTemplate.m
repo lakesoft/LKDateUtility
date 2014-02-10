@@ -18,6 +18,8 @@
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        NSLog(@"%@", [[NSBundle bundleForClass:self]
+                      pathForResource:NSStringFromClass(self) ofType:@"plist"]);
         _keywords = [NSArray arrayWithContentsOfFile:[[NSBundle bundleForClass:self]
                                                       pathForResource:NSStringFromClass(self) ofType:@"plist"]];
     });
@@ -82,7 +84,7 @@
 + (NSString*)keywordTitleAtIndex:(NSInteger)index
 {
     return NSLocalizedStringFromTableInBundle(self._keywords[index][@"desc"],
-                                              NSStringFromClass(self),
+                                              nil,
                                               [NSBundle bundleForClass:self],
                                               nil);
 }
