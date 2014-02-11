@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class LKDateTemplateDescription;
 @interface LKDateTemplate : NSObject
 
 #pragma mark - Files
@@ -21,7 +22,6 @@
 
 #pragma mark - Keyword list
 + (NSInteger)numberOfKeywords;
-+ (NSString*)keywordTitleAtIndex:(NSInteger)index;  // e.g.) "Week"
-+ (NSString*)keywordListAtIndex:(NSInteger)index;   // e.g.) "%e %E"
++ (LKDateTemplateDescription*)descriptionAtIndex:(NSInteger)index;
 
 @end

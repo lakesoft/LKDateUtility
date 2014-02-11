@@ -9,6 +9,7 @@
 #import "LKAppDelegate.h"
 #import "LKDateWeekUtility.h"
 #import "LKDateTemplate.h"
+#import "LKDateTemplateDescription.h"
 
 @implementation LKAppDelegate
 
@@ -66,7 +67,8 @@
     NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
 
     for (int i=0; i < LKDateTemplate.numberOfKeywords; i++) {
-        NSLog(@"%@: %@", [LKDateTemplate keywordTitleAtIndex:i], [LKDateTemplate keywordListAtIndex:i]);
+        LKDateTemplateDescription* desc = [LKDateTemplate descriptionAtIndex:i];
+        NSLog(@"%@: %@", desc.title, desc.keywords);
     }
     
     return YES;

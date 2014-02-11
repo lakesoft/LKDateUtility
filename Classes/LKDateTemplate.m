@@ -8,6 +8,7 @@
 
 #import "LKDateTemplate.h"
 #import "LKDateUtilityBundle.h"
+#import "LKDateTemplateDescription.h"
 
 @implementation LKDateTemplate
 
@@ -80,16 +81,13 @@
     return self._keywords.count;
 }
 
-+ (NSString*)keywordTitleAtIndex:(NSInteger)index
++ (LKDateTemplateDescription*)descriptionAtIndex:(NSInteger)index
 {
-    return NSLocalizedStringFromTableInBundle(self._keywords[index][@"desc"],
-                                              nil,
-                                              LKDateUtilityBundle.bundle,
-                                              nil);
-}
-
-+ (NSString*)keywordListAtIndex:(NSInteger)index
-{
+    LKDateTemplateDescription* desc = LKDateTemplateDescription.new;
+    desc.title = NSLocalizedStringFromTableInBundle(self._keywords[index][@"desc"],
+                                                    nil,
+                                                    LKDateUtilityBundle.bundle,
+                                                    nil);
     NSMutableString* string = NSMutableString.string;
     NSArray* array = [self._keywords[index][@"keyMap"]
                       keysSortedByValueUsingComparator:^NSComparisonResult(id obj1, id obj2) {
@@ -98,8 +96,8 @@
     for (NSString* word in array) {
         [string appendFormat:@"%@ ", word];
     }
-    return [string stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet];
+    desc.keywords = [string stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet];
+    return desc;
 }
-
 
 @end
