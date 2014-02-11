@@ -10,9 +10,10 @@
 		BC43800B18A9875F00E268E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC43800918A9875F00E268E8 /* InfoPlist.strings */; };
 		BC43801418A9888A00E268E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC43801618A9888A00E268E8 /* Localizable.strings */; };
 		BC43801918A988C400E268E8 /* LKDateTemplate.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC43801818A988C400E268E8 /* LKDateTemplate.plist */; };
-		BC43801D18A9926500E268E8 /* LKDateUtility-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC43800418A9875F00E268E8 /* LKDateUtility-Resources.bundle */; };
 		BC43802418A996BE00E268E8 /* LKDateUtilityBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC43802318A996BE00E268E8 /* LKDateUtilityBundle.m */; };
 		BC43802518A996BE00E268E8 /* LKDateUtilityBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC43802318A996BE00E268E8 /* LKDateUtilityBundle.m */; };
+		BC43802A18A9A2B200E268E8 /* LKDateUtility-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC43802718A9A23700E268E8 /* LKDateUtility-Resources.bundle */; };
+		BC43802B18A9A2B300E268E8 /* LKDateUtility-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC43802718A9A23700E268E8 /* LKDateUtility-Resources.bundle */; };
 		BCF2E31D18A3395A00906E47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E31C18A3395A00906E47 /* Foundation.framework */; };
 		BCF2E31F18A3395A00906E47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E31E18A3395A00906E47 /* CoreGraphics.framework */; };
 		BCF2E32118A3395A00906E47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF2E32018A3395A00906E47 /* UIKit.framework */; };
@@ -40,13 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BC43801A18A98A0100E268E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BCF2E31118A3395A00906E47 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC43800318A9875F00E268E8;
-			remoteInfo = "LKDateUtility-Resources";
-		};
 		BCF2E33918A3395A00906E47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BCF2E31118A3395A00906E47 /* Project object */;
@@ -62,11 +56,12 @@
 		BC43800818A9875F00E268E8 /* LKDateUtility-Resources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LKDateUtility-Resources-Info.plist"; sourceTree = "<group>"; };
 		BC43800A18A9875F00E268E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC43800C18A9875F00E268E8 /* LKDateUtility-Resources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LKDateUtility-Resources-Prefix.pch"; sourceTree = "<group>"; };
-		BC43801518A9888A00E268E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		BC43801718A9888E00E268E8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC43801518A9888A00E268E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC43801718A9888E00E268E8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BC43801818A988C400E268E8 /* LKDateTemplate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LKDateTemplate.plist; sourceTree = "<group>"; };
 		BC43802218A996BE00E268E8 /* LKDateUtilityBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDateUtilityBundle.h; sourceTree = "<group>"; };
 		BC43802318A996BE00E268E8 /* LKDateUtilityBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateUtilityBundle.m; sourceTree = "<group>"; };
+		BC43802718A9A23700E268E8 /* LKDateUtility-Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "LKDateUtility-Resources.bundle"; sourceTree = "<group>"; };
 		BCF2E31918A3395A00906E47 /* LKDateUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKDateUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF2E31C18A3395A00906E47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BCF2E31E18A3395A00906E47 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -257,6 +252,7 @@
 		BCF2E37618A8EDF700906E47 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BC43802718A9A23700E268E8 /* LKDateUtility-Resources.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -292,7 +288,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BC43801B18A98A0100E268E8 /* PBXTargetDependency */,
 			);
 			name = LKDateUtility;
 			productName = LKDateUtility;
@@ -367,7 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC43801D18A9926500E268E8 /* LKDateUtility-Resources.bundle in Resources */,
+				BC43802A18A9A2B200E268E8 /* LKDateUtility-Resources.bundle in Resources */,
 				BCF2E32718A3395A00906E47 /* InfoPlist.strings in Resources */,
 				BCF2E32F18A3395A00906E47 /* Images.xcassets in Resources */,
 			);
@@ -378,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF2E34018A3395A00906E47 /* InfoPlist.strings in Resources */,
+				BC43802B18A9A2B300E268E8 /* LKDateUtility-Resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +421,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BC43801B18A98A0100E268E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BC43800318A9875F00E268E8 /* LKDateUtility-Resources */;
-			targetProxy = BC43801A18A98A0100E268E8 /* PBXContainerItemProxy */;
-		};
 		BCF2E33A18A3395A00906E47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BCF2E31818A3395A00906E47 /* LKDateUtility */;
@@ -478,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = Resources;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LKDateUtility-Resources/LKDateUtility-Resources-Prefix.pch";
@@ -486,10 +478,8 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "LKDateUtility-Resources/LKDateUtility-Resources-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -498,15 +488,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = Resources;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LKDateUtility-Resources/LKDateUtility-Resources-Prefix.pch";
 				INFOPLIST_FILE = "LKDateUtility-Resources/LKDateUtility-Resources-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -663,6 +652,7 @@
 				BC43800F18A9876000E268E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCF2E31418A3395A00906E47 /* Build configuration list for PBXProject "LKDateUtility" */ = {
 			isa = XCConfigurationList;
