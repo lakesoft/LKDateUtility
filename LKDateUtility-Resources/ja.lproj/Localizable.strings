@@ -5,13 +5,23 @@
   Created by Hiroshi Hashiguchi on 2014/02/11.
   Copyright (c) 2014年 lakesoft. All rights reserved.
 */
-"date" = "日付";
-"time" = "時刻";
-"year" = "年";
-"month" = "月";
-"day" = "日";
-"week" = "曜日";
-"hour" = "時";
-"minute" = "分";
-"second" = "秒";
-"ampm" = "午前/午後";
+"string.date" = "日付";
+"string.date1" = "日付 (ショートスタイル)";
+"string.date2" = "日付 (ミディアムスタイル)";
+"string.date3" = "日付 (ロングスタイル)";
+"string.date4" = "日付 (フルスタイル)";
+"string.time" = "時刻";
+"string.time1" = "時刻 (ショートスタイル)";
+"string.time2" = "時刻 (ミディアムスタイル)";
+"string.time3" = "時刻 (ロングスタイル)";
+"string.time4" = "時刻 (フルスタイル)";
+
+"part.year" = "年";
+"part.month" = "月";
+"part.day" = "日";
+"part.week" = "曜日";
+"part.hour" = "時";
+"part.minute" = "分";
+"part.second" = "秒";
+"part.ampm" = "午前/午後";
+"part.timezone" = "タイムゾーン";

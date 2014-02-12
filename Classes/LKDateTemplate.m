@@ -10,6 +10,12 @@
 #import "LKDateUtilityBundle.h"
 #import "LKDateTemplateDescription.h"
 
+NS_ENUM(NSInteger, LKDateTemplateType) {
+    LKDateTemplateTypeStringDate = 11,
+    LKDateTemplateTypeStringTime = 12,
+    LKDateTemplateTypePart = 21,
+};;
+
 @implementation LKDateTemplate
 
 #pragma mark - Privates
@@ -41,35 +47,33 @@
 {
     date = date ? date : NSDate.date;
     NSString* result = template;
-
-    if ([result rangeOfString:@"%date"].length > 0) {
-        NSDateFormatter* df = NSDateFormatter.new;
-        df.locale = locale;
-        df.dateStyle = NSDateFormatterShortStyle;
-        NSString* string = [df stringFromDate:date];
-        result = [result stringByReplacingOccurrencesOfString:@"%date" withString:string];
-        
-    }
-
-    if ([result rangeOfString:@"%time"].length > 0) {
-        NSDateFormatter* df = NSDateFormatter.new;
-        df.locale = locale;
-        df.timeStyle = NSDateFormatterShortStyle;
-        NSString* string = [df stringFromDate:date];
-        result = [result stringByReplacingOccurrencesOfString:@"%time" withString:string];
-    }
-    
-    
-    for (NSDictionary* keyword in self._keywords) {
+    NSArray* keywords = [self._keywords sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        return [obj2[@"descKey"] compare:obj1[@"descKey"]]; //reverse
+    }];
+    for (NSDictionary* keyword in keywords) {
         NSDictionary* keyMap = keyword[@"keyMap"];
         NSArray* keys = [keyMap keysSortedByValueUsingComparator:^NSComparisonResult(id obj1, id obj2) {
             return [obj2 compare:obj1]; //reverse
         }];
+        NSInteger type = ((NSNumber*)keyword[@"type"]).integerValue;
+        
         for (NSString* key in keys) {
             if ([result rangeOfString:key].length > 0) {
                 NSDateFormatter* df = NSDateFormatter.new;
                 df.locale = locale;
-                df.dateFormat = keyMap[key];
+                switch (type) {
+                    case LKDateTemplateTypePart:
+                        df.dateFormat = keyMap[key];
+                        break;
+                        
+                    case LKDateTemplateTypeStringDate:
+                        df.dateStyle = ((NSNumber*)keyMap[key]).integerValue;
+                        break;
+                        
+                    case LKDateTemplateTypeStringTime:
+                        df.timeStyle = ((NSNumber*)keyMap[key]).integerValue;
+                        break;
+                }
                 NSString* dateTimeString = [df stringFromDate:date];
                 result = [result stringByReplacingOccurrencesOfString:key withString:dateTimeString];
             }
@@ -86,7 +90,7 @@
 + (LKDateTemplateDescription*)descriptionAtIndex:(NSInteger)index
 {
     LKDateTemplateDescription* desc = LKDateTemplateDescription.new;
-    desc.title = NSLocalizedStringFromTableInBundle(self._keywords[index][@"desc"],
+    desc.title = NSLocalizedStringFromTableInBundle(self._keywords[index][@"descKey"],
                                                     nil,
                                                     LKDateUtilityBundle.bundle,
                                                     nil);

@@ -32,8 +32,24 @@
     
     template = @"%date";
     NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    template = @"%date1";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    template = @"%date2";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    template = @"%date3";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    template = @"%date4";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
 
     template = @"%time";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    template = @"%time1";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    template = @"%time2";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    template = @"%time3";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    template = @"%time4";
     NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
 
     template = @"%y, %yy, %yyyy";
@@ -64,6 +80,18 @@
     NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
 
     template = @"%a";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%zzz";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%zzzz";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%ZZZ";
+    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+
+    template = @"%ZZZZ";
     NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
 
     for (int i=0; i < LKDateTemplate.numberOfKeywords; i++) {

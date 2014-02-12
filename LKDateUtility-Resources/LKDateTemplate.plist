@@ -3,8 +3,120 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>desc</key>
-		<string>year</string>
+		<key>type</key>
+		<integer>11</integer>
+		<key>descKey</key>
+		<string>string.date</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%date</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>11</integer>
+		<key>descKey</key>
+		<string>string.date1</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%date1</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>11</integer>
+		<key>descKey</key>
+		<string>string.date2</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%date2</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>11</integer>
+		<key>descKey</key>
+		<string>string.date3</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%date3</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>11</integer>
+		<key>descKey</key>
+		<string>string.date4</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%date4</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>12</integer>
+		<key>descKey</key>
+		<string>string.time</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%time</key>
+			<string>1</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>12</integer>
+		<key>descKey</key>
+		<string>string.time1</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%time1</key>
+			<string>1</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>12</integer>
+		<key>descKey</key>
+		<string>string.time2</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%time2</key>
+			<string>2</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>12</integer>
+		<key>descKey</key>
+		<string>string.time3</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%time3</key>
+			<string>3</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>12</integer>
+		<key>descKey</key>
+		<string>string.time4</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%time4</key>
+			<string>4</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>21</integer>
+		<key>descKey</key>
+		<string>part.year</string>
 		<key>keyMap</key>
 		<dict>
 			<key>%y</key>
@@ -16,8 +128,10 @@
 		</dict>
 	</dict>
 	<dict>
-		<key>desc</key>
-		<string>month</string>
+		<key>type</key>
+		<integer>21</integer>
+		<key>descKey</key>
+		<string>part.month</string>
 		<key>keyMap</key>
 		<dict>
 			<key>%M</key>
@@ -31,8 +145,10 @@
 		</dict>
 	</dict>
 	<dict>
-		<key>desc</key>
-		<string>day</string>
+		<key>type</key>
+		<integer>21</integer>
+		<key>descKey</key>
+		<string>part.day</string>
 		<key>keyMap</key>
 		<dict>
 			<key>%d</key>
@@ -42,8 +158,10 @@
 		</dict>
 	</dict>
 	<dict>
-		<key>desc</key>
-		<string>week</string>
+		<key>type</key>
+		<integer>21</integer>
+		<key>descKey</key>
+		<string>part.week</string>
 		<key>keyMap</key>
 		<dict>
 			<key>%eee</key>
@@ -53,8 +171,10 @@
 		</dict>
 	</dict>
 	<dict>
-		<key>desc</key>
-		<string>hour</string>
+		<key>type</key>
+		<integer>21</integer>
+		<key>descKey</key>
+		<string>part.hour</string>
 		<key>keyMap</key>
 		<dict>
 			<key>%k</key>
@@ -72,8 +192,10 @@
 		</dict>
 	</dict>
 	<dict>
-		<key>desc</key>
-		<string>minute</string>
+		<key>type</key>
+		<integer>21</integer>
+		<key>descKey</key>
+		<string>part.minute</string>
 		<key>keyMap</key>
 		<dict>
 			<key>%m</key>
@@ -83,8 +205,10 @@
 		</dict>
 	</dict>
 	<dict>
-		<key>desc</key>
-		<string>second</string>
+		<key>type</key>
+		<integer>21</integer>
+		<key>descKey</key>
+		<string>part.second</string>
 		<key>keyMap</key>
 		<dict>
 			<key>%s</key>
@@ -94,12 +218,31 @@
 		</dict>
 	</dict>
 	<dict>
-		<key>desc</key>
-		<string>ampm</string>
+		<key>type</key>
+		<integer>21</integer>
+		<key>descKey</key>
+		<string>part.ampm</string>
 		<key>keyMap</key>
 		<dict>
 			<key>%a</key>
 			<string>a</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>type</key>
+		<integer>21</integer>
+		<key>descKey</key>
+		<string>part.timezone</string>
+		<key>keyMap</key>
+		<dict>
+			<key>%zzz</key>
+			<string>zzz</string>
+			<key>%zzzz</key>
+			<string>zzzz</string>
+			<key>%ZZZ</key>
+			<string>ZZZ</string>
+			<key>%ZZZZ</key>
+			<string>ZZZZ</string>
 		</dict>
 	</dict>
 </array>

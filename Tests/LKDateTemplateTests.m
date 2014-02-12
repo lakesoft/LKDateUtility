@@ -117,6 +117,17 @@
     NSString* exp82 = @"PM";
     NSString* res82 = [LKDateTemplate convertWithTemplate:tmp80 date:date02 locale:locale];
     XCTAssertEqualObjects(res82, exp82, @"%@", tmp80);
+
+    NSString* tmp90 = @"%zzz,%zzzz,%ZZZ,%ZZZZ";
+    NSDateFormatter* df90 = NSDateFormatter.new;
+    df90.dateFormat = @"zzz,zzzz,ZZZ,ZZZZ";
+    df90.locale = locale;
+    NSString* exp91 = [df90 stringFromDate:date01];
+    NSString* res91 = [LKDateTemplate convertWithTemplate:tmp90 date:date01 locale:locale];
+    XCTAssertEqualObjects(res91, exp91, @"%@", tmp90);
+    NSString* exp92 = [df90 stringFromDate:date02];
+    NSString* res92 = [LKDateTemplate convertWithTemplate:tmp90 date:date02 locale:locale];
+    XCTAssertEqualObjects(res92, exp92, @"%@", tmp90);
 }
 
 @end

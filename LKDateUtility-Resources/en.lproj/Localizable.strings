@@ -5,13 +5,23 @@
   Created by Hiroshi Hashiguchi on 2014/02/11.
   Copyright (c) 2014年 lakesoft. All rights reserved.
 */
-"date" = "Date";
-"time" = "Time";
-"year" = "Year";
-"month" = "Month";
-"day" = "Day";
-"week" = "Week";
-"hour" = "Hour";
-"minute" = "Minute";
-"second" = "Second";
-"ampm" = "AM/PM";
+"string.date" = "Date";
+"string.date1" = "Date (short style)";
+"string.date2" = "Date (medium style)";
+"string.date3" = "Date (long style)";
+"string.date4" = "Date (full style)";
+"string.time" = "Time";
+"string.time1" = "Time (short style)";
+"string.time2" = "Time (medium style)";
+"string.time3" = "Time (long style)";
+"string.time4" = "Time (full style)";
+
+"part.year" = "Year";
+"part.month" = "Month";
+"part.day" = "Day";
+"part.week" = "Week";
+"part.hour" = "Hour";
+"part.minute" = "Minute";
+"part.second" = "Second";
+"part.ampm" = "AM/PM";
+"part.timezone" = "Timezone";
