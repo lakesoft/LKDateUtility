@@ -49,7 +49,9 @@
         NSString* string = [df stringFromDate:date];
         result = [result stringByReplacingOccurrencesOfString:@"%date" withString:string];
         
-    } else if ([result rangeOfString:@"%time"].length > 0) {
+    }
+
+    if ([result rangeOfString:@"%time"].length > 0) {
         NSDateFormatter* df = NSDateFormatter.new;
         df.locale = locale;
         df.timeStyle = NSDateFormatterShortStyle;
