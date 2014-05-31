@@ -21,11 +21,11 @@
     [self.window makeKeyAndVisible];
     
     for (NSInteger i=1; i <= 7; i++) {
-        NSLog(@"%d: %@", i, [LKDateWeekUtility descriptionForWeekday:i]);
+        NSLog(@"%zd: %@", i, [LKDateWeekUtility descriptionForWeekday:i]);
     }
     
     for (NSInteger i=1; i <= 7; i++) {
-        NSLog(@"%d: %@", i, [LKDateWeekUtility shortDescriptionForWeekday:i]);
+        NSLog(@"%zd: %@", i, [LKDateWeekUtility shortDescriptionForWeekday:i]);
     }
     
     NSString* template;

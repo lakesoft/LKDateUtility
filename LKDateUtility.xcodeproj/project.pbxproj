@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2A371D19394FB200C672B7 /* LKDateWeekUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A371C19394FB200C672B7 /* LKDateWeekUtilityTests.m */; };
 		BC43800B18A9875F00E268E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC43800918A9875F00E268E8 /* InfoPlist.strings */; };
 		BC43801418A9888A00E268E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC43801618A9888A00E268E8 /* Localizable.strings */; };
 		BC43801918A988C400E268E8 /* LKDateTemplate.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC43801818A988C400E268E8 /* LKDateTemplate.plist */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC2A371C19394FB200C672B7 /* LKDateWeekUtilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDateWeekUtilityTests.m; sourceTree = "<group>"; };
 		BC437FF418A9865900E268E8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		BC43800418A9875F00E268E8 /* LKDateUtility-Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LKDateUtility-Resources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC43800818A9875F00E268E8 /* LKDateUtility-Resources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LKDateUtility-Resources-Info.plist"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				BCF2E34118A3395A00906E47 /* LKDateUtilityTests.m */,
 				BCF2E35818A38B0100906E47 /* LKDateRotationTests.m */,
 				BCF2E37D18A901C400906E47 /* LKDateTemplateTests.m */,
+				BC2A371C19394FB200C672B7 /* LKDateWeekUtilityTests.m */,
 				BCF2E33C18A3395A00906E47 /* Supporting Files */,
 			);
 			path = Tests;
@@ -333,7 +336,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LK;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = lakesoft;
 				TargetAttributes = {
 					BCF2E33318A3395A00906E47 = {
@@ -423,6 +426,7 @@
 			files = (
 				BCF2E35718A33B2400906E47 /* LKDateRotation.m in Sources */,
 				BCF2E36218A607CC00906E47 /* LKDateWeekUtility.m in Sources */,
+				BC2A371D19394FB200C672B7 /* LKDateWeekUtilityTests.m in Sources */,
 				BCF2E37518A8B18000906E47 /* LKDateTemplate.m in Sources */,
 				BCF2E35918A38B0100906E47 /* LKDateRotationTests.m in Sources */,
 				BC43802518A996BE00E268E8 /* LKDateUtilityBundle.m in Sources */,
@@ -525,7 +529,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -565,7 +568,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -624,7 +626,6 @@
 		BCF2E34918A3395A00906E47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LKDateUtility.app/LKDateUtility";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -647,7 +648,6 @@
 		BCF2E34A18A3395A00906E47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LKDateUtility.app/LKDateUtility";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

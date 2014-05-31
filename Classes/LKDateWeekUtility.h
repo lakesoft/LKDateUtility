@@ -23,4 +23,6 @@ typedef NS_ENUM(NSInteger, LKDateWeekday) {
 + (NSString*)descriptionForWeekday:(LKDateWeekday)weekday;
 + (NSString*)shortDescriptionForWeekday:(LKDateWeekday)weekday;
 
++ (NSInteger)weeksFromFirstMondayIn1970ForDate:(NSDate*)date;
+
 @end

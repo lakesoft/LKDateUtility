@@ -47,4 +47,21 @@
     return [df stringFromDate:date];
 }
 
+
+#pragma mark - API (weeks)
++ (NSInteger)weeksFromFirstMondayIn1970ForDate:(NSDate*)date
+{
+    NSDateComponents *components = NSDateComponents.new;
+    components.year = 1970;
+    components.month = 1;
+    components.day = 5; // Monday
+    NSDate *referenceDate = [NSCalendar.currentCalendar dateFromComponents:components];
+
+    NSInteger weeks = [NSCalendar.currentCalendar components:NSCalendarUnitWeekOfYear
+                                                    fromDate:referenceDate
+                                                      toDate:date
+                                                     options:0].weekOfYear;
+    return weeks;
+}
+
 @end
