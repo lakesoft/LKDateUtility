@@ -197,7 +197,7 @@
 //        NSLog(@"prev=%d, target=%d", previousComp.weekday, weekday);
         NSDateComponents* limitComp = [self _dateComponentsByAddingYear:0
                                                                   month:0
-                                                                    day:previousComp.weekday < weekday ? weekday - previousComp.weekday : previousComp.weekday-weekday+7
+                                                                    day:weekday - previousComp.weekday +(previousComp.weekday < weekday ? 0 : 7)
                                                                    hour:0
                                                                  minute:0
                                                                  toDate:previousDate];

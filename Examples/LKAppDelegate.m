@@ -30,69 +30,73 @@
     
     NSString* template;
     
+    NSLocale* locale = [NSLocale localeWithLocaleIdentifier:@"ja_JP"];
+    NSDate* date = NSDate.date; //[NSDate.date dateByAddingTimeInterval:60*60*12];
+    
     template = @"%date";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
     template = @"%date1";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
     template = @"%date2";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
     template = @"%date3";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
+
     template = @"%date4";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%time";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
     template = @"%time1";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
     template = @"%time2";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
     template = @"%time3";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
     template = @"%time4";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%y, %yy, %yyyy";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%M, %MM, %MMM, %MMMM";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%d, %dd";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%eee, %eeee";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%h, %hh";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%k, %kk";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
     
     template = @"%H, %HH";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%m, %mm";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%s, %ss";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%a";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%zzz";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%zzzz";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%ZZZ";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     template = @"%ZZZZ";
-    NSLog(@"'%@' => %@", template, [LKDateTemplate convertWithTemplate:template]);
+    NSLog(@"%@,%@", template, [LKDateTemplate convertWithTemplate:template date:date locale:locale]);
 
     for (int i=0; i < LKDateTemplate.numberOfKeywords; i++) {
         LKDateTemplateDescription* desc = [LKDateTemplate descriptionAtIndex:i];
