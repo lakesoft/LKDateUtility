@@ -40,20 +40,20 @@ below symbols are availables:
 
 This method return week number of from 1970/01/05 (Monday). The number start with 0 when the date is '1970/01/05'.
 
-examples:
- 1970/01/05(Mon) => 0
-   :
- 2014/05/24(Sat) => 2315
- 2014/05/25(Sun) => 2315
- 2014/05/26(Mon) => 2316   updated
- 2014/05/27(Tue) => 2316
- 2014/05/28(Wed) => 2316
- 2014/05/29(Thu) => 2316
- 2014/05/30(Fri) => 2316
- 2014/05/31(Sat) => 2316
- 2014/06/01(Sun) => 2316
- 2014/06/02(Mon) => 2317   updated
-   :
+	examples:
+	1970/01/05(Mon) => 0
+	   :
+ 	2014/05/24(Sat) => 2315
+ 	2014/05/25(Sun) => 2315
+ 	2014/05/26(Mon) => 2316   updated
+ 	2014/05/27(Tue) => 2316
+ 	2014/05/28(Wed) => 2316
+ 	2014/05/29(Thu) => 2316
+ 	2014/05/30(Fri) => 2316
+ 	2014/05/31(Sat) => 2316
+ 	2014/06/01(Sun) => 2316
+ 	2014/06/02(Mon) => 2317   updated
+	   :
 
 You can use it for calculating by weekly (mon-sun).
 
