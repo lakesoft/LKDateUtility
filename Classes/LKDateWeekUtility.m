@@ -21,7 +21,7 @@
     }
     
     // 1970/1/1 => Thu (weekday=5)
-    NSCalendar* calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar* calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents* components = NSDateComponents.new;
     components.day = -5 + weekday;
     NSDate* date = [calendar dateByAddingComponents:components

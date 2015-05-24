@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LKDateUtility"
-  s.version      = "0.9.15"
+  s.version      = "1.0.0"
   s.summary      = "Date utility library"
   s.description  = <<-DESC
 Date utility library.
@@ -10,7 +10,7 @@ Date utility library.
   s.author       = { "Hiroshi Hashiguchi" => "xcatsan@mac.com" }
   s.source       = { :git => "https://github.com/lakesoft/LKDateUtility", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Classes/*'

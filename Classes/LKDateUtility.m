@@ -40,7 +40,7 @@
     comp.minute = minute;
     comp.second = second;
     
-    NSCalendar* calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar* calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     return [calendar dateFromComponents:comp];
     
     return comp.date;

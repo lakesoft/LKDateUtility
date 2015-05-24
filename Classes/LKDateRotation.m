@@ -17,7 +17,7 @@
     static NSCalendar* _calendar = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+        _calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     });
     return _calendar;
 }
@@ -25,13 +25,13 @@
 + (NSDateComponents*)_componentsFromDate:(NSDate*)date
 {
     NSDateComponents* components = [self._calendar components:
-                                    NSSecondCalendarUnit  |
-                                    NSMinuteCalendarUnit  |
-                                    NSHourCalendarUnit    |
-                                    NSDayCalendarUnit     |
-                                    NSWeekdayCalendarUnit |
-                                    NSMonthCalendarUnit   |
-                                    NSYearCalendarUnit
+                                    NSCalendarUnitSecond  |
+                                    NSCalendarUnitMinute  |
+                                    NSCalendarUnitHour    |
+                                    NSCalendarUnitDay     |
+                                    NSCalendarUnitWeekday |
+                                    NSCalendarUnitMonth   |
+                                    NSCalendarUnitYear
                                                      fromDate:date];
     return components;
 }
