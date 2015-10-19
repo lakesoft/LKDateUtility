@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LKDateUtility"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "Date utility library"
   s.description  = <<-DESC
 Date utility library.
