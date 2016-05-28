@@ -12,7 +12,7 @@
 
 + (NSBundle*)bundle
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"LKDateUtility-Resources" ofType:@"bundle"];
+    NSString *path = [[NSBundle bundleForClass:LKDateUtilityBundle.class] pathForResource:@"LKDateUtility-Resources" ofType:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:path];
     return bundle;
 }
